@@ -1,0 +1,17 @@
+        .imagem{
+            background-image: url(https://www.giraofertas.com.br/wp-content/uploads/2018/08/Dylan-Blue-Pour-Homme-Versace-04.jpg);
+            background-repeat: no-repeat;
+            width: 100vh;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .textos1{
+            font-weight: bold !important;
+        }
+
+        .text-decorator-none{
+            text-decoration: none;
+        }

@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Typography, Grid, Button} from '@material-ui/core';
 import {Box} from '@mui/material';
 import './Home.css';
 import Carrossel from '../../components/carrossel/Carrossel'
+import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
+import useLocalStorage from 'react-use-localstorage';
+import { useNavigate } from 'react-router-dom';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 
 function Home() {
+    let navigate = useNavigate();
+    const [token, setToken] = useLocalStorage('token');
+
+    useEffect(() => {
+        if (token == "") {
+            alert("Você precisa estar logado")
+            navigate("/login")
+
+        }
+    }, [token])
+
     return (
         <>
-            {/* <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
@@ -15,22 +30,24 @@ function Home() {
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
+                            <ModalPostagem/>
                         </Box>
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="https://www.theperfumeshop.com/elab/ecomm/Puig/2022/Fame/1.jpg" alt="" width="500px" height="500px" />
+                    <img src="https://i.pinimg.com/originals/41/3f/80/413f80d0b6d2190ed26d8a4a5924f3dd.gif" alt="" width="500px" height="500px" />
                 </Grid>
-                <Grid xs={12} className='postagens' }}>
+                <Grid xs={12} className='postagens'>
+                <TabPostagem/>
                 </Grid>
-    </Grid> */}
+    </Grid>
 
-    <Grid container style={{ marginTop: "8px" }}>
+    {/* <Grid container style={{ marginTop: "8px" }}>
       <Grid item xs={12}>
         <Carrossel />
       </Grid>
-    </Grid>
+    </Grid> */}
         </> 
     );
 }

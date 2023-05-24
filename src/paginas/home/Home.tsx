@@ -41,6 +41,7 @@ function Home() {
                 <Grid xs={12} className='postagens'>
                 <TabPostagem/>
                 </Grid>
+                <Carrossel/>
     </Grid>
 
     {/* <Grid container style={{ marginTop: "8px" }}>

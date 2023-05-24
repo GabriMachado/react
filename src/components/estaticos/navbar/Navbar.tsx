@@ -49,7 +49,7 @@ function Navbar() {
 
                         <Box mx={1} className='cursor'>
                             <Link to='/temas' className='text-decorator-none'>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" style={{ color: "white" }}>
                                     Temas
                                 </Typography>
                             </Link>

@@ -7,11 +7,19 @@ import useLocalStorage from 'react-use-localstorage';
 import { useNavigate } from 'react-router-dom';
 import { busca } from '../../../services/Service';
 import { Box } from '@mui/material';
+import { useSelector } from 'react-redux';
+import { UserState } from '../../../store/token/Reducer';
 
 
 function ListaTema() {
     const [temas, setTemas] = useState<Tema[]>([])
-    const [token, setToken] = useLocalStorage('token');
+
+    // const [token, setToken] = useLocalStorage('token');
+
+    const token = useSelector<UserState, UserState["tokens"]>(
+        (state) => state.tokens
+    )
+        
     let navigate = useNavigate();
 
     useEffect(() => {
@@ -52,7 +60,7 @@ function ListaTema() {
                                 <Box display="flex" justifyContent="center" mb={1.5} >
                                     <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" className="marginLeft" size='small' style={{ color: "#ccae62" }}>
+                                            <Button variant="contained" className="marginLeft" size='small' color="secondary" style={{ background: "#ccae62" }}>
                                                 atualizar
                                             </Button>
                                         </Box>

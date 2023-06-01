@@ -42,7 +42,7 @@ function Home() {
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Qual seu perfume preferido? Conta pra gente!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
@@ -53,9 +53,9 @@ function Home() {
                         </Link>
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.pinimg.com/originals/41/3f/80/413f80d0b6d2190ed26d8a4a5924f3dd.gif" alt="" width="500px" height="500px" />
-                </Grid>
+               {/* <Grid item xs={6} >
+                    <img src="https://img.freepik.com/fotos-premium/padrao-de-fundo-de-textura-de-marmore-branco-com-alta-resolucao_38648-238.jpg?w=2000" alt="" width="1000px" height="500px" />
+                </Grid>  */}
                 <Grid xs={12} className='postagens'>
                 <TabPostagem/>
                 </Grid>

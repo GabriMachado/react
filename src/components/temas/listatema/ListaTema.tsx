@@ -9,6 +9,7 @@ import { busca } from '../../../services/Service';
 import { Box } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
+import { toast } from 'react-toastify';
 
 
 function ListaTema() {
@@ -24,7 +25,16 @@ function ListaTema() {
 
     useEffect(() => {
         if (token == '') {
-            alert("Você precisa estar logado!")
+            toast.error('Você precisa estar logado' ,{
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined
+            });
             navigate("/login")
         }
     }, [token])
@@ -49,7 +59,7 @@ function ListaTema() {
                         <Card variant="outlined">
                             <CardContent>
                                 <Typography color="textSecondary" gutterBottom>
-                                    Tema
+                                    Familia Olfativa
                                 </Typography>
                                 <Typography variant="h5" component="h2">
                                     {tema.descricao}
@@ -67,7 +77,7 @@ function ListaTema() {
                                     </Link>
                                     <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" size='small' color="secondary">
+                                            <Button variant="contained" size='small' color="secondary" className='botaodelete'>
                                                 deletar
                                             </Button>
                                         </Box>

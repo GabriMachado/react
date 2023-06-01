@@ -20,7 +20,7 @@ function Footer() {
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
                         <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-nos nas redes sociais </Typography>
+                            <Typography variant="h5" align="center" gutterBottom className='textos'>Me siga nas redes sociais </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
                             <a href="https://www.facebook.com/gabriel.machado.5220665" target="_blank">

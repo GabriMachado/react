@@ -15,9 +15,9 @@ function TabPostagem() {
         <>
             <TabContext value={value}>
                 <AppBar position="static">
-                    <Tabs centered indicatorColor="secondary" onChange={handleChange}>
+                    <Tabs centered indicatorColor="secondary" onChange={handleChange} className="informacoes">
                         <Tab label="Todas as postagens" value="1" />
-                        <Tab label="Sobre-nós" value="2" />
+                        <Tab label="Sobre o blog" value="2" />
                     </Tabs>
                 </AppBar>
                 <TabPanel value="1" >
@@ -26,13 +26,12 @@ function TabPostagem() {
                     </Box>
                 </TabPanel>
                 <TabPanel value="2">
-                    <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
-                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
-                    ut eveniet natus totam et, voluptate dicta tempore alias, odio nobis non eius cupiditate minima inventore pariatur! Ipsum itaque 
-                    consectetur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit consequuntur suscipit fugiat, nam quis quod
-                    quaerat veritatis et, vel ratione beatae, facere neque! Quo animi porro voluptate saepe deleniti? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Inventore adipisci, officia aut quidem dolorum deserunt iure dolorem doloribus velit nobis quas consequatur at ullam
-                    odit, nesciunt est nulla nihil excepturi!</Typography>
+                    <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre mim:</Typography>
+                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify" className="titulo">Olá, eu me chamo Gabriel Machado, tenho 23 anos e moro em Caçapava-SP. O blog foi criado para trazer reviews e opniões sobre perfumes nacionais e importados, já que desde criança sempre fui apaixonado por isso. Espero que eu possa ajudar na hora de comprar o seu perfume da vida. Qualquer sugestão entre em contato comigo nos canais compartilhados, vou amar bater um papo com você.
+                     Com muito carinho, Gabriel!</Typography>
+                    
+                    <img src="https://i.imgur.com/Tk5cNgY.png" alt="" className='fotosobre' />
+               
                 </TabPanel>
             </TabContext>
         </>

@@ -1,7 +1,21 @@
 .text-decorator-none{
     text-decoration: none;
+    
+   
 }
 
 .letra{
     color: white !important; 
+    
+}
+.testes{
+    background-color: black;
+}
+.botaodelete{
+    background-color: black !important;
+    
+}
+.postagens{
+    background-image: url(https://img.freepik.com/fotos-premium/padrao-de-fundo-de-textura-de-marmore-branco-com-alta-resolucao_38648-238.jpg?w=2000);
+
 }

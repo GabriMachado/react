@@ -1,3 +1,14 @@
 .topo{
     margin-top: 20px;
 }
+.botaofinalizar{
+    background-color: #ccae62 !important;
+}
+.titulocadastro{
+    color:  black !important;
+    font-weight: bold !important;
+    font-style: oblique;    
+}
+.topo{
+    background-image: url(https://img.freepik.com/fotos-premium/padrao-de-fundo-de-textura-de-marmore-branco-com-alta-resolucao_38648-238.jpg?w=2000);
+}

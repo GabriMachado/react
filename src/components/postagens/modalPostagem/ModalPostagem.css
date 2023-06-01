@@ -1,9 +1,14 @@
-.cursor{
+.cursor {
     cursor: pointer;
 }
 
-.btnModal{
-    border-color: white !important;
-    background-color: white !important;
-    
+.btnModal {
+    border-color: black !important;
+    background-color: #e9d89f !important;
+    font-weight: bold !important;
+
+}
+
+.botaofinalizar {
+    background-color: #ccae62 !important;
 }

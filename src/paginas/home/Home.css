@@ -1,16 +1,27 @@
 .caixa{
-    background-color:#ccae62
+   /* min-height: 1000px !important;
+   width: 1000px !important;  */
+    position: relative !important;
+    align-items: center;
+    font-style: oblique; 
+    background-image: url(https://img.freepik.com/fotos-premium/padrao-de-fundo-de-textura-de-marmore-branco-com-alta-resolucao_38648-238.jpg?w=2000);
+
+
 }
 
 .titulo{
-    color: white !important;
+    color:  black !important;
     font-weight: bold !important;
 }
 .botao{
-   border-color:white !important; 
-   background-color:white;
-    color:white !important
+   border-color: black !important; 
+   background-color: #e9d89f !important;
+    color: black !important;
+    font-weight: bold !important;
+
+ 
+
 }
 .postagens{
-   background-color: white;
+    background-image: url(https://img.freepik.com/fotos-premium/padrao-de-fundo-de-textura-de-marmore-branco-com-alta-resolucao_38648-238.jpg?w=2000);
 }

@@ -40,13 +40,13 @@ function Navbar() {
     if (token !== '') {
         navbarComponent =
 
-            <AppBar position="static" style={{ background: "#ccae62" }}>
+            <AppBar position="static" className="barrainicial">
                 <Toolbar variant="dense">
-                    <Box className='cursor'>
+                    {/* <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
                             BlogPessoal
                         </Typography>
-                    </Box>
+                    </Box> */}
 
                     <Box display="flex" justifyContent="start">
                         <Link to='/home' className='text-decorator-none'>
